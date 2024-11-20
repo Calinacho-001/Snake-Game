@@ -97,8 +97,32 @@ python game.py
 - **Sound Effects**: Add sounds when the snake eats food or when the game ends.
 - **Increasing Difficulty**: Gradually increase the speed of the game as the snake grows longer.
 - **Graphical User Interface (GUI)**: Implement a graphical interface with more advanced features, such as a menu or settings screen.
-- **Leaderboard**: Save and display high scores for multiple players.
+- **Leaderboard**: Save and display high scores for multiple players. ( DONE )
 
 ## Credits
 
 This project was created as an exercise to demonstrate object-oriented programming (OOP) principles and basic game development using Python's `turtle` graphics module.
+
+
+## Change Log - Version 1.2.0
+
+### 1. **High Score Tracking** 🏆
+   - The game now tracks the **high score** across multiple sessions. Each time the game is reset, the current score is compared to the high score, and if the current score is higher, the high score is updated.
+   - The score and high score are displayed at the top of the screen, providing players with a continuous challenge to beat their best score.
+
+### 2. **Indefinite Gameplay** 🎮
+   - The game no longer displays a "GAME OVER" message when the snake collides with the wall or its own body. Instead, the snake resets, and gameplay continues indefinitely.
+   - The game only ends when manually closed by the user, offering an ongoing challenge to see how long players can keep the snake alive.
+
+### 3. **Improved Snake Reset Mechanism** 🔄
+   - When the snake collides with itself or the walls, it is reset to its starting position, and the score is reset to 0. This allows players to quickly continue without interruption.
+   - The game logic has been streamlined to ensure a smooth reset process.
+
+### 4. **Optimized Game Loop**
+   - The game loop has been further optimized to ensure smoother performance, with a slight delay (`time.sleep(0.1)`) between each movement of the snake, allowing for more fluid controls and gameplay.
+   
+## Bug Fixes
+- Fixed minor display issues with the score updating during gameplay.
+  
+## Known Issues
+- The game currently has no visual indication when it’s over (besides the player manually closing the game window).
