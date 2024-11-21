@@ -103,6 +103,10 @@ python game.py
 
 This project was created as an exercise to demonstrate object-oriented programming (OOP) principles and basic game development using Python's `turtle` graphics module.
 
+## Change Log - Version 1.2.1
+
+### 1. **High Score Tracking** 🏆
+ - The game now saves the High Score to a data.txt file.
 
 ## Change Log - Version 1.2.0
 
